@@ -1,0 +1,65 @@
+body { 
+    background-color: #242424;
+}
+header h2 {
+    color: #FFFFFF;
+    height: 50px;
+}
+hr {
+    border: 2px solid #df4759;
+    margin: 0px 0px;
+}
+a:hover {
+    font-weight: 900;
+}
+a:link {
+    color: blue !important;
+    text-decoration: underline;
+}
+a:visited {
+    color: green;
+}
+a.active {
+    color: #df4759 !important;
+    background-color: #323232 !important;
+    text-decoration: none;
+}
+
+
+.contact_days {
+    margin: 0px 15px 0px 0px;
+}
+.visited_radios {
+    margin: 0px 15px 0px 0px;
+}
+.retain-width {
+    flex-basis: 350px !important;
+}
+/* Bold font applied to label columns instead of to :required intentionally because that emboldens the form contents instead */
+.bold_req {
+    font-weight: bold;
+}
+#restaurant_title {
+    font-family: 'New Tegomin', serif;
+    margin: 15px 0px 0px 0px;
+}
+#banner_image {
+    min-width: 100px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+#footer_static {
+    z-index: 1030;
+    background-color: #242424;
+    text-align: center;
+}
+#menu_items {
+    margin: 40px 0px;
+}
+#announce_jumbo {
+    margin: 10px 0px 25px 10px;
+}
+#CarouselWithAds {
+    margin: 10px 0px 100px 0px;
+}

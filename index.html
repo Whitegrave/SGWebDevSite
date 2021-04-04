@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Importing Bootstrap CSS support -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <!-- Importing google font for title per assignment terms -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css"  />
+
+    <!-- Title -->
+    <title>Home</title>
+</head>
+<header>
+    <!-- Page Name -->
+    <h2 class="text-center font-weight-bold align-bottom" id="restaurant_title">Steamin Vegans</h2>
+    <hr>
+    <!-- Nav -->
+    <nav class="nav-pills navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link active fa fa-home" aria-current="page" href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+<body>
+    <!-- Main bootstrap container, set to full device width -->
+    <div class="container-fluid text-light">
+        <!-- Row 0 only shows if no java enabled -->
+        <noscript>
+            <div class="row">
+                <div class="col bg-danger fw-bold">
+                    NO JAVASCRIPT DETECTED. PLEASE BE AWARE THIS SITE USES JAVASCRIPT TO ENSURE PROPER FUNCTIONALITY.
+                </div>
+            </div>
+        </noscript>
+        <!-- Row 1, Splash -->
+        <!-- Content placed in middle of 3 columns for responsive size and centering on all devices -->
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <img id="banner_image" src="assets/banner.png" class="img-fluid mx-auto d-block" alt="Banner Image">
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- Row 2, Jumbotron -->
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron jumbotron-fluid" id="announce_jumbo">
+                    <div class="container bg-secondary py-3">
+                      <h1 class="display-4">Exciting news, fellow Zombies!</h1>
+                      <p class="lead">We are opening a new location! We want you to experience the greatest vegan human meals from a convenient location. Coming soon to downtown. Stay tuned!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Row 3, Description -->
+        <!-- Content placed in middle of 3 columns for responsive size and centering -->
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 overflow-auto">
+                <p>America's longest standing purveyor of fine zombie meals, we are celebrating our 23rd anniversary of providing the greatest vegan, grass-fed humans. We want to take this opportunity to say thank you. Thanks for continuing to support our cause as we strive to deliver the leanest, most ethical human meals to your plates. When our founder, Brian Brrrains began this journey over 20 years ago at the start of the viral outbreak, he set out to create a welcoming place for fellow zombies. A place without fear or judgement. A place where zombies could fill their bellies with the most responsibly and sustainably grown humans -- at an affordable price! Those cornerstones continue to drive our purposes today, as you deserve the best. We will continue to grow our menus -- with you in mind -- from exciting new drinks and dishes, to dimmer and danker seating areas and new locations for your enjoyment. Another thing you can expect to see is new, creative flavors to spice up your tired, same-old hunks of human flesh. Stay tuned for more exciting news as we push closer to our 25th year as America's #1 zombie restaurant!</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <!-- Row 4, Carousel -->
+        <div id="CarouselWithAds" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/NewLocation.png" class="d-block w-100" alt="Image Ad New Location">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/NewDrink.png" class="d-block w-100" alt="Image Ad New Drink">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/NewItems.png" class="d-block w-100" alt="Image Ad New Menu">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#CarouselWithAds" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#CarouselWithAds" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>       
+    </div>
+    <!-- Secondary container, Footer/Location, Static -->
+    <footer id="footer_static" class="footer mt-auto py-3 fixed-bottom border-top border-3 border-danger text-center">
+        <div class="container">
+            <div class="row text-muted">
+                <div class="col text-center">810 Rotten Blvd, Erie PA 16518</div>
+            </div>
+            <div class="row text-muted">
+                <div class="col text-center">814-777-3636</div>
+            </div>
+        </div>
+    </footer>
+<!-- Importing Bootstrap JS support -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<!-- Importing Fon Awesome icon library for assignment house icon -->
+<script src="https://use.fontawesome.com/80713aa661.js"></script>
+</body>
+</html>

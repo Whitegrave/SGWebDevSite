@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Importing Bootstrap CSS support -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css"  />
+
+    <!-- Title -->
+    <title>Contact Us</title>
+</head>
+<header>
+    <!-- Page Name -->
+    <h2 class="text-center font-weight-bold align-bottom">Steamin Vegans</h2>
+    <hr>
+    <!-- Nav -->
+    <nav class="nav-pills navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link fa fa-home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+<body>
+    <!-- Main bootstrap container, set to full device width -->
+    <div class="container-fluid text-light fs-5">
+        <!-- Row 0 only shows if no java enabled -->
+        <noscript>
+            <div class="row">
+                <div class="col bg-danger fw-bold">
+                    NO JAVASCRIPT DETECTED. PLEASE BE AWARE THIS SITE USES JAVASCRIPT TO ENSURE PROPER FUNCTIONALITY.
+                </div>
+            </div>
+        </noscript>
+        <form action="#" method="post"  onsubmit="return ValidateValues()">
+            <!-- Row 1, Name form -->
+            <div class="row mt-3">
+                <!-- Descriptor -->
+                <div class="col-4 text-end bold_req">Name:</div>
+                <!-- Form -->
+                <div class="col-4">
+                    <div class="form-control-sm">
+                        <input type="text" class="form-control" id="user_name" placeholder="Undead Ned" required>
+                    </div>
+                </div>
+                <!-- Blank Space -->
+                <div class="col-4"></div>
+            </div>
+            <!-- Row 2, Email form -->
+            <div class="row mt-3">
+                <!-- Descriptor -->
+                <div class="col-4 text-end bold_req">Email:</div>
+                <!-- Form -->
+                <div class="col-4">
+                    <div class="form-control-sm">
+                        <input type="email" class="form-control" id="user_email" placeholder="UnDeadNed@gmail.com" required>
+                    </div>
+                </div>
+                <!-- Blank Space -->
+                <div class="col-4"></div>
+            </div>
+            <!-- Row 3, Phone form -->
+            <div class="row mt-3">
+                <!-- Descriptor -->
+                <div class="col-4 text-end">Phone:</div>
+                <!-- Form -->
+                <div class="col-4">
+                    <div class="form-control-sm">
+                        <input type="tel" class="form-control" id="user_phone" placeholder="814-666-5050" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                </div>
+                <!-- Blank Space -->
+                <div class="col-4"></div>
+            </div>
+            <!-- Row 4, Inquiry dropdown -->
+            <div class="row mt-3">
+                <!-- Descriptor -->
+                <div class="col-4 text-end bold_req">Reason for Inquiry:</div>
+                <!-- Form -->
+                <div class="col-4">
+                    <select class="form-select" aria-label="Contact reason list" id="InqType" required>
+                        <option selected value="1">Catering</option>
+                        <option value="2">Private Party</option>
+                        <option value="3">Feedback</option>
+                        <option value="4">Other</option>
+                    </select>
+                </div>
+                <!-- Blank Space -->
+                <div class="col-4"></div>
+            </div>
+            <!-- Row 5, Additional Info formbox -->
+            <div class="row mt-3">
+                <!-- Descriptor -->
+                <div class="col-4 text-end">Additional Information:</div>
+                <!-- Form -->
+                <div class="col-4">
+                    <div class="form-control">
+                        <textarea class="form-control" id="text_additional" placeholder="This is the greatest restaurant I have ever visited in my death!" rows=5></textarea>
+                    </div>
+                </div>
+                <!-- Blank Space -->
+                <div class="col-4"></div>
+            </div>
+            <!-- Row 6, Visited? Radio Form -->
+            <div class="row mt-3">
+                <!-- Descriptor -->
+                <div class="col-4 text-end bold_req">Have you been to the restaurant?</div>
+                <!-- Form -->
+                <div class="col-4">
+                    <div class="form-check-inline visited_radios" required>
+                        <input class="form-check-input" type="radio" id="visited_y" name="HasVisited">
+                        <label class="form-check-label" for="visited_y">
+                        Yes
+                        </label>
+                        <input class="form-check-input" type="radio" id="visited_n" name="HasVisited">
+                        <label class="form-check-label" for="visited_n">
+                        No
+                        </label>
+                    </div>
+                </div>
+                <!-- Blank Space -->
+                <div class="col-4"></div>
+            </div>
+            <!-- Row 7, Contact Checkboxes -->
+            <div class="row mt-3">
+                <!-- Descriptor -->
+                <div class="col-4 text-end bold_req">Best days to contact you:</div>
+                <!-- Form -->
+                <!-- Classes as retain-width to apply CSS and prevent items from overflowing into new rows on small screens-->
+                <div class="col-4 retain-width">
+                    <div class="form-check-inline" required>
+                        <input class="form-check-input" type="checkbox" value="contact_M" id="contact_M">
+                        <label class="form-check-label contact_days" for="contact_M">
+                        M
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="contact_T" id="contact_T">
+                        <label class="form-check-label contact_days" for="contact_T">
+                        T
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="contact_W" id="contact_W">
+                        <label class="form-check-label contact_days" for="contact_W">
+                        W
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="contact_Th" id="contact_Th">
+                        <label class="form-check-label contact_days" for="contact_Th">
+                        Th
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="contact_F" id="contact_F">
+                        <label class="form-check-label contact_days" for="contact_F">
+                        F
+                        </label>
+                    </div>
+                </div>
+                <!-- Blank Space -->
+                <div class="col-4"></div>
+            </div>
+            <!-- Row 8, Submit button -->
+            <div class="row mt-3">
+                <!-- Blank Space -->
+                <div class="col-4"></div>
+                <!-- Form -->
+                <div class="col-4 text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <!-- Blank Space -->
+                <div class="col-4"></div>
+            </div>
+        </form>
+    </div>
+    <!-- Secondary container, Footer/Location, Static -->
+    <footer id="footer_static" class="footer mt-auto py-3 fixed-bottom border-top border-3 border-danger text-center">
+        <div class="container">
+            <div class="row text-muted">
+                <div class="col text-center">810 Rotten Blvd, Erie PA 16518</div>
+            </div>
+            <div class="row text-muted">
+                <div class="col text-center">814-777-3636</div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Importing Bootstrap JS support -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<!-- Importing Fon Awesome icon library for assignment house icon -->
+<script src="https://use.fontawesome.com/80713aa661.js"></script>
+<!-- Custom JS -->
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
